@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public   class Account {
+
+	private String name;
+	private String accNo;
+	private String accType;
+	private double balance;
+	private double currentBal;
+	
+	public Account(String name,String accNo,String accType,double balance,double currentBal) {
+		this.name = name;
+		this.accNo = accNo;
+		this.accType = accType;
+		this.balance = balance;
+		this.currentBal = currentBal;
+	}
+	
+	public void printDetails() {
+		Scanner input = new Scanner(System. in);
+		System. out. print("Customer Name: "+name);
+		name = input. nextLine();
+		System. out. print("Account Number: "+accNo);
+		accNo = input. nextLine();
+		System. out. print("Account Type (S = Saving Account, C = Current Account) : "+accType);
+		accType = input. nextLine();
+		System. out. print("Account Balance: "+balance);
+		balance = input. nextDouble();
+	}
+	public  double CheckMinBalance() {
+		return balance;}
+	public  double CalServiceCharge() {
+		return 0;
+	}
+	public  double CalInterest() {
+		return 0;
+	}
+}
