@@ -1,38 +1,74 @@
-import java.util.Scanner;
 
 public   class Account {
 
-	private String name;
-	private String accNo;
-	private String accType;
-	private double balance;
-	private double currentBal;
+	protected String name;
+	protected String accNo;
+	protected String accType;
+	protected double balance;
+	protected double currentBal;
+	protected double minBal;
+	protected double interest;
 	
-	public Account(String name,String accNo,String accType,double balance,double currentBal) {
+	Account(){}
+
+	public  double CalCurrentBalance() {
+		return 0;
+	}
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getAccNo() {
+		return accNo;
+	}
+
+	public void setAccNo(String accNo) {
 		this.accNo = accNo;
+	}
+
+	public String getAccType() {
+		return accType;
+	}
+
+	public void setAccType(String accType) {
 		this.accType = accType;
+	}
+
+	public double getBalance() {
+		return balance;
+	}
+
+	public void setBalance(double balance) {
 		this.balance = balance;
+	}
+
+	public double getCurrentBal() {
+		return currentBal;
+	}
+
+	public void setCurrentBal(double currentBal) {
 		this.currentBal = currentBal;
 	}
-	
-	public void printDetails() {
-		Scanner input = new Scanner(System. in);
-		System. out. print("Customer Name: "+name);
-		name = input. nextLine();
-		System. out. print("Account Number: "+accNo);
-		accNo = input. nextLine();
-		System. out. print("Account Type (S = Saving Account, C = Current Account) : "+accType);
-		accType = input. nextLine();
-		System. out. print("Account Balance: "+balance);
-		balance = input. nextDouble();
+
+	public double getMinBal() {
+		return minBal;
 	}
-	public  double CheckMinBalance() {
-		return balance;}
-	public  double CalServiceCharge() {
-		return 0;
+
+	public void setMinBal(double minBal) {
+		this.minBal = minBal;
 	}
-	public  double CalInterest() {
-		return 0;
+
+	public double getInterest() {
+		return interest;
 	}
+
+	public void setInterest(double interest) {
+		this.interest = interest;
+	}
+
  }
