@@ -1,0 +1,20 @@
+
+public class Current extends Account {
+
+	Current(){}
+	double minBal = 1000;
+	public  double CalCurrentBalance() {
+		double minBal = 1000;
+		
+		if(minBal > balance) {
+			return currentBal = balance - 25; 
+		}
+		if(balance >= 1000 && balance <= 5000) {
+			return	currentBal = (balance * (0.03)) + balance;
+		}
+		else {
+			return	currentBal = (balance * (0.05)) + balance;
+		}
+	}
+}
+
