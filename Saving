@@ -1,0 +1,30 @@
+
+public class Saving extends Account {
+
+	Saving(){}
+	
+	
+	public  double CalCurrentBalance() {
+		
+		double minBal = 500;
+		
+		if(minBal > balance) {
+			return currentBal = balance - 10; 
+			
+		}else{
+			 
+			currentBal =(balance * (0.04))+ balance;
+			 return  currentBal;
+		}	
+	}
+	
+//	public double CalInterest() {
+//		if(minBal == balance || minBal < balance) {
+//			currentBal = balance * 0.4;
+//		return currentBal;
+//		}
+//		else {
+//		return currentBal = balance;
+//		}
+//	}
+}
